@@ -17,7 +17,6 @@ import java.util.*
 import kotlin.math.log
 
 class JokesActivity : AppCompatActivity() {
-    lateinit var jokesave:Joke
     lateinit var txtJoke: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,12 +84,7 @@ class JokesActivity : AppCompatActivity() {
     }
 
     fun saveData(calificacion: Int){
-        jokesave.id = UUID.randomUUID().toString()
-        jokesave.jokeId = ""
-        jokesave.source = ""
-        jokesave.createdAt = "5/10/2022"
-        jokesave.calificacion = calificacion
-        jokesave.joke = txtJoke.text.toString();
+        var jokesave = Joke(UUID.randomUUID().toString(),"","",calificacion ,txtJoke.text.toString(),"5/10/2022");
         Log.e("JOKESAVE","${jokesave}")
     }
 }
