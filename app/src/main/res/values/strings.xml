@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProyectJokes</string>
+    <string name="jokes">Jokes</string>
+    <string name="jooke">Here is the joke</string>
+    <string name="calificacion">Calificacion</string>
+    <string name="rango">Calificacion</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="back">back</string>
+</resources>
